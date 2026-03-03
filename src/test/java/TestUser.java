@@ -12,7 +12,7 @@ public class TestUser {
     //variáveis estáticas para o tipo de conteúdo e a URI da API de pets    
     static String contentType = "application/json";
     static String uriPet = "https://petstore.swagger.io/v2/pet";
-
+    static String petId = "123456"; //ID do pet a ser criado e verificado nos testes        
     //método para ler o conteúdo de um arquivo JSON e retornar como String
     public static String lerArquivoJson(String arquivoJson) {
         try {
@@ -27,12 +27,7 @@ public class TestUser {
     public void testPostPet() {
         try {
             String jsonBody  = lerArquivoJson("src/test/resource/json/pet1.json");
-
-            //aqui você pode adicionar a lógica para enviar uma requisição POST para criar um pet
-            String petId = "123456"; //substitua pelo ID do pet criado
-
             //comença  o teste via REST Assured para verificar se o pet foi criado corretamente
-
             given() //pré-condições
                 .contentType(contentType) //tipo de conteúdo
                 .log().all() //log de todas as informações da requisição
@@ -57,5 +52,25 @@ public class TestUser {
         } catch (Exception e) {
             throw new RuntimeException("Erro ao executar o teste de criação de pet: " + e.getMessage(), e);
         }
+    }
+
+    @Test
+    public void testGetPet(){
+       String petName = "Snooby";
+       String categoryName = "cachorro";
+       String tagName = "vacinado";
+
+       given()
+            .contentType(contentType)
+            .log().all()
+        .when()
+            .get(uriPet + "/" + Integer.parseInt(petId))
+        .then()
+            .log().all()
+            .statusCode(200)
+            .body("name", is(petName))
+            .body("category.name", is(categoryName))
+            .body("tags[0].name", is(tagName))
+        ;
     }
 }
