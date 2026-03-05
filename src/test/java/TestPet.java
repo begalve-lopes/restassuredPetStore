@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 
 //classe de teste para a entidade User, utilizando o framework JUnit 5
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class TestUser {
+public class TestPet {
 
     //variáveis estáticas para o tipo de conteúdo e a URI da API de pets    
     static String contentType = "application/json";
