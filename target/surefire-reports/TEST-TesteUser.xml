@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TesteUser" time="5.884" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TesteUser" time="5.008" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="PT"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/home/begas/.sdkman/candidates/java/25.0.1-amzn/lib"/>
-    <property name="sun.java.command" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire/surefirebooter-20260305124900206_3.jar /home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire 2026-03-05T12-48-59_940-jvmRun1 surefire-20260305124900206_1tmp surefire_0-20260305124900206_2tmp"/>
+    <property name="sun.java.command" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire/surefirebooter-20260305144345114_3.jar /home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire 2026-03-05T14-43-44_885-jvmRun1 surefire-20260305144345114_1tmp surefire_0-20260305144345114_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="TesteUser#TestLogin"/>
     <property name="surefire.test.class.path" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/test-classes:/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/classes:/home/begas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.2/junit-jupiter-api-5.11.2.jar:/home/begas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/begas/.m2/repository/org/junit/platform/junit-platform-commons/1.11.2/junit-platform-commons-1.11.2.jar:/home/begas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/begas/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/home/begas/.m2/repository/io/rest-assured/rest-assured/5.5.5/rest-assured-5.5.5.jar:/home/begas/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/begas/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/begas/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/begas/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/begas/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/begas/.m2/repository/io/rest-assured/json-path/5.5.5/json-path-5.5.5.jar:/home/begas/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/begas/.m2/repository/io/rest-assured/rest-assured-common/5.5.5/rest-assured-common-5.5.5.jar:/home/begas/.m2/repository/io/rest-assured/xml-path/5.5.5/xml-path-5.5.5.jar:/home/begas/.m2/repository/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3.jar:"/>
@@ -29,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire/surefirebooter-20260305124900206_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire/surefirebooter-20260305144345114_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.1+8-LTS"/>
     <property name="user.name" value="begas"/>
@@ -58,7 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="TestLogin" classname="TesteUser" time="5.814">
+  <testcase name="TestLogin" classname="TesteUser" time="4.951">
     <system-out><![CDATA[Request method:	GET
 Request URI:	https://petstore.swagger.io/v2/user/login?username=maria&password=123456
 Proxy:			<none>
@@ -72,23 +72,23 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 05 Mar 2026 11:49:06 GMT
+Date: Thu, 05 Mar 2026 13:43:49 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-X-Expires-After: Thu Mar 05 12:49:06 UTC 2026
+X-Expires-After: Thu Mar 05 14:43:49 UTC 2026
 X-Rate-Limit: 5000
 Server: Jetty(9.2.9.v20150224)
 
 {
     "code": 200,
     "type": "unknown",
-    "message": "logged in user session:1772711346300"
+    "message": "logged in user session:1772718229898"
 }
-Conteudo do Token: ession:1772711346300
+Conteudo do Token: 1772718229898
 ]]></system-out>
   </testcase>
 </testsuite>

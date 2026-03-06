@@ -16,7 +16,7 @@ public class TesteUser {
     static String token;
 
     @Test 
-    public void TestLogin(){
+    public String TestLogin(){
         Response resposta = (Response) given()
             .contentType(ct)
             .log().all()
@@ -32,9 +32,8 @@ public class TesteUser {
         .extract()
         ;
 
-         token = resposta.jsonPath().getString("message").substring(23);
+        token = resposta.jsonPath().getString("message").substring(23);
         System.out.println("Conteudo do Token: " + token);
-    
-
+        return token;
     } 
 }

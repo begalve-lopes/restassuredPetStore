@@ -1,0 +1,16 @@
+{
+  "id": 123456,
+  "category": {
+    "id": 1,
+    "name": "cachorro"
+  },
+  "name": "Snooby",
+  "photoUrls": [],
+  "tags": [
+    {
+      "id": 9,
+      "name": "vacinado"
+    }
+  ],
+  "status": "sold"
+}

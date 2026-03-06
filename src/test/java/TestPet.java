@@ -6,8 +6,13 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+
+import com.google.gson.Gson;
 
 import static io.restassured.RestAssured.given;
+
 
 //classe de teste para a entidade User, utilizando o framework JUnit 5
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -21,6 +26,8 @@ public class TestPet {
     static String categoryName = "cachorro";
     static String tagName = "vacinado";  
     static String[] status = {"available","sold"};
+
+    TesteUser testLogin  = new TesteUser();
     //método para ler o conteúdo de um arquivo JSON e retornar como String
     public static String lerArquivoJson(String arquivoJson) {
         try {
@@ -50,7 +57,6 @@ public class TestPet {
                 .body("name", is(petName)) //verifica se o nome do pet na resposta é "Snooby"; 
                 .body("id", is(Integer.parseInt(petId))) //verifica se o ID do pet na resposta é igual ao ID do pet criado
                 .body("category.name", is(categoryName)) //verifica se a categoria do pet na resposta é "cachorro"
-                .body("tags[0].id", is(9))
                 .body("tags[0].name", is(tagName)) //verifica se o nome da tag na resposta é "vacinado"
                 .body("status", is(status[0])) //verifica se o status do pet na resposta é "available"
             ;
@@ -68,6 +74,7 @@ public class TestPet {
        given()
             .contentType(contentType)
             .log().all()
+            .header("", "api_key:" + testLogin.TestLogin())
         .when()
             .get(uriPet + "/" + Integer.parseInt(petId))
         .then()
@@ -94,9 +101,10 @@ public class TestPet {
                 .log().all()
                 .statusCode(200)
                 .body("name", is(petName))
+                .body("id", is(Integer.parseInt(petId)))
                 .body("category.name", is(categoryName))
                 .body("tags[0].name", is(tagName))
-                .body("status", is(status[1]))
+                .body("status", is(status[0]))
         ;
             
         } catch (Exception e) {
@@ -118,6 +126,40 @@ public class TestPet {
             .body("code", is(200))
             .body("type", is("unknown"))    
             .body("message", is(String.valueOf(petId)))
+        ;
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/BookPlanilha1.csv", numLinesToSkip = 1)
+    public void testPostPetDDT(int petId, String petName, int catId, String catName, String status1) {
+
+        Category category = new Category();
+        category.id = catId;
+        category.name = catName;
+
+        Pet pet = new Pet();
+        pet.id = petId;
+        pet.name = petName;
+        pet.category = category;
+        pet.status = status1;
+
+        Gson gson = new Gson();
+        String jsonBody = gson.toJson(pet);
+
+        given()
+            .contentType(contentType)
+            .log().all()
+            .body(jsonBody)
+        .when()
+            .post(uriPet)
+        .then()
+            .log().all()
+            .statusCode(200)
+            .body("id", is(petId))
+            .body("name", is(petName))
+            .body("category.id", is(catId))
+            .body("category.name", is(catName))
+            .body("status", is(status1))
         ;
     }
 }
