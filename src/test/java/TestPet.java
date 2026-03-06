@@ -131,17 +131,24 @@ public class TestPet {
 
     @ParameterizedTest
     @CsvFileSource(resources = "/csv/BookPlanilha1.csv", numLinesToSkip = 1)
-    public void testPostPetDDT(int petId, String petName, int catId, String catName, String status1) {
-
+    public void testPostPetDDT(int petId, String petName, int catId, String catName, int tagId, String tagName, String status1) {
+        
         Category category = new Category();
         category.id = catId;
         category.name = catName;
+
+        Tag tag = new Tag();
+        tag.id = tagId;
+        tag.name = tagName;
 
         Pet pet = new Pet();
         pet.id = petId;
         pet.name = petName;
         pet.category = category;
         pet.status = status1;
+
+        pet.photoUrls = new String[]{};
+        pet.tags = new Tag[]{tag};
 
         Gson gson = new Gson();
         String jsonBody = gson.toJson(pet);
@@ -159,7 +166,51 @@ public class TestPet {
             .body("name", is(petName))
             .body("category.id", is(catId))
             .body("category.name", is(catName))
+            .body("tags[0].id", is(tagId))
+            .body("tags[0].name", is(tagName))
             .body("status", is(status1))
         ;
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/BookPlanilha1.csv", numLinesToSkip = 1)
+    public void testPutPetDDT(int petId, String petName, int catId, String catName, int tagId, String tagName, String status1, String status2) {
+
+        // Criar categoria
+        Category category = new Category();
+        category.id = catId;
+        category.name = catName;
+
+        // Criar tag
+        Tag tag = new Tag();
+        tag.id = tagId;
+        tag.name = tagName;
+
+        // Criar pet com novo status (atualização)
+        Pet pet = new Pet();
+        pet.id = petId;
+        pet.name = petName;
+        pet.category = category;
+        pet.photoUrls = new String[]{};
+        pet.tags = new Tag[]{tag};
+        pet.status = status2; // atualizando para o status2 do CSV
+
+        Gson gson = new Gson();
+        String jsonBody = gson.toJson(pet);
+
+        given()
+            .contentType(contentType)
+            .body(jsonBody)
+        .when()
+            .put(uriPet)
+        .then()
+            .statusCode(200)
+            .body("id", is(petId))
+            .body("name", is(petName))
+            .body("category.id", is(catId))
+            .body("category.name", is(catName))
+            .body("tags[0].id", is(tagId))
+            .body("tags[0].name", is(tagName))
+            .body("status", is(status2)); // verificando se atualizou
     }
 }
