@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestUser" time="5.212" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestUser" time="44.875" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/test-classes:/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/classes:/home/begas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.2/junit-jupiter-api-5.11.2.jar:/home/begas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/begas/.m2/repository/org/junit/platform/junit-platform-commons/1.11.2/junit-platform-commons-1.11.2.jar:/home/begas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/begas/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/home/begas/.m2/repository/io/rest-assured/rest-assured/5.5.5/rest-assured-5.5.5.jar:/home/begas/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/begas/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/begas/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/begas/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/begas/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/begas/.m2/repository/io/rest-assured/json-path/5.5.5/json-path-5.5.5.jar:/home/begas/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/begas/.m2/repository/io/rest-assured/rest-assured-common/5.5.5/rest-assured-common-5.5.5.jar:/home/begas/.m2/repository/io/rest-assured/xml-path/5.5.5/xml-path-5.5.5.jar:/home/begas/.m2/repository/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3.jar:"/>
+    <property name="java.class.path" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/test-classes:/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/classes:/home/begas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.2/junit-jupiter-api-5.11.2.jar:/home/begas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/begas/.m2/repository/org/junit/platform/junit-platform-commons/1.11.2/junit-platform-commons-1.11.2.jar:/home/begas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/begas/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/home/begas/.m2/repository/io/rest-assured/rest-assured/5.5.5/rest-assured-5.5.5.jar:/home/begas/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/begas/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/begas/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/begas/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/begas/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/begas/.m2/repository/io/rest-assured/json-path/5.5.5/json-path-5.5.5.jar:/home/begas/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/begas/.m2/repository/io/rest-assured/rest-assured-common/5.5.5/rest-assured-common-5.5.5.jar:/home/begas/.m2/repository/io/rest-assured/xml-path/5.5.5/xml-path-5.5.5.jar:/home/begas/.m2/repository/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3.jar:/home/begas/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.3/junit-jupiter-params-5.11.3.jar:/home/begas/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/home/begas/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:"/>
     <property name="java.vm.vendor" value="Amazon.com Inc."/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
@@ -13,10 +13,10 @@
     <property name="user.country" value="PT"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/home/begas/.sdkman/candidates/java/25.0.1-amzn/lib"/>
-    <property name="sun.java.command" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire/surefirebooter-20260305124426727_3.jar /home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire 2026-03-05T12-44-26_495-jvmRun1 surefire-20260305124426727_1tmp surefire_0-20260305124426727_2tmp"/>
+    <property name="sun.java.command" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire/surefirebooter-20260309230551700_3.jar /home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire 2026-03-09T23-05-51_502-jvmRun1 surefire-20260309230551700_1tmp surefire_0-20260309230551700_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="TestUser#TestLogin"/>
-    <property name="surefire.test.class.path" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/test-classes:/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/classes:/home/begas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.2/junit-jupiter-api-5.11.2.jar:/home/begas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/begas/.m2/repository/org/junit/platform/junit-platform-commons/1.11.2/junit-platform-commons-1.11.2.jar:/home/begas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/begas/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/home/begas/.m2/repository/io/rest-assured/rest-assured/5.5.5/rest-assured-5.5.5.jar:/home/begas/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/begas/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/begas/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/begas/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/begas/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/begas/.m2/repository/io/rest-assured/json-path/5.5.5/json-path-5.5.5.jar:/home/begas/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/begas/.m2/repository/io/rest-assured/rest-assured-common/5.5.5/rest-assured-common-5.5.5.jar:/home/begas/.m2/repository/io/rest-assured/xml-path/5.5.5/xml-path-5.5.5.jar:/home/begas/.m2/repository/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3.jar:"/>
+    <property name="test" value="TestUser"/>
+    <property name="surefire.test.class.path" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/test-classes:/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/classes:/home/begas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.2/junit-jupiter-api-5.11.2.jar:/home/begas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/begas/.m2/repository/org/junit/platform/junit-platform-commons/1.11.2/junit-platform-commons-1.11.2.jar:/home/begas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/begas/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/home/begas/.m2/repository/io/rest-assured/rest-assured/5.5.5/rest-assured-5.5.5.jar:/home/begas/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/begas/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/begas/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/begas/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/begas/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/begas/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/begas/.m2/repository/io/rest-assured/json-path/5.5.5/json-path-5.5.5.jar:/home/begas/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/begas/.m2/repository/io/rest-assured/rest-assured-common/5.5.5/rest-assured-common-5.5.5.jar:/home/begas/.m2/repository/io/rest-assured/xml-path/5.5.5/xml-path-5.5.5.jar:/home/begas/.m2/repository/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3.jar:/home/begas/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3.jar:/home/begas/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.3/junit-jupiter-params-5.11.3.jar:/home/begas/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/home/begas/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/begas"/>
     <property name="user.language" value="pt"/>
@@ -29,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire/surefirebooter-20260305124426727_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/begas/Documentos/Meus Projectos/iterasys/petstore142/target/surefire/surefirebooter-20260309230551700_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.1+8-LTS"/>
     <property name="user.name" value="begas"/>
@@ -58,12 +58,125 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="TestLogin" classname="TestUser" time="5.147">
-    <failure message="1 expectation failed.&#10;JSON path message doesn&apos;t match.&#10;Expected: a CharSequence with length &lt;29&gt;&#10;  Actual: logged in user session:1772711071957&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+  <testcase name="TestPostUser" classname="TestUser" time="9.343">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 123456,
+    "username": "maria",
+    "firstName": "Maria",
+    "lastName": "Silva",
+    "email": "maria@gmail.com",
+    "password": "123456",
+    "phone": "999999999",
+    "userStatus": 100
+}
+HTTP/1.1 200 OK
+Date: Mon, 09 Mar 2026 22:06:00 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "123456"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testUserGet" classname="TestUser" time="11.473">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/maria
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 09 Mar 2026 22:06:12 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 123456,
+    "username": "maria",
+    "firstName": "Maria",
+    "lastName": "Silva",
+    "email": "maria@gmail.com",
+    "password": "123456",
+    "phone": "999999999",
+    "userStatus": 100
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testPutUser" classname="TestUser" time="9.531">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://petstore.swagger.io/v2/user/maria
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 123456,
+    "username": "maria",
+    "firstName": "Maria",
+    "lastName": "Silva",
+    "email": "maria@gmail.com",
+    "password": "123456",
+    "phone": "111111111",
+    "userStatus": 100
+}
+HTTP/1.1 200 OK
+Date: Mon, 09 Mar 2026 22:06:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "123456"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteUser" classname="TestUser" time="14.46">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
-JSON path message doesn't match.
-Expected: a CharSequence with length <29>
-  Actual: logged in user session:1772711071957
+Expected status code <200> but was <404>.
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -83,19 +196,17 @@ Expected: a CharSequence with length <29>
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
-	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at TestUser.TestLogin(TestUser.java:30)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at TestUser.testDeleteUser(TestUser.java:105)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 ]]></failure>
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/user/login?username=maria&password=123456
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/maria
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -106,23 +217,14 @@ Headers:		Accept=*/*
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-HTTP/1.1 200 OK
-Date: Thu, 05 Mar 2026 11:44:31 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
+HTTP/1.1 404 Not Found
+Date: Mon, 09 Mar 2026 22:06:37 GMT
+Content-Length: 0
 Connection: keep-alive
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-X-Expires-After: Thu Mar 05 12:44:31 UTC 2026
-X-Rate-Limit: 5000
 Server: Jetty(9.2.9.v20150224)
-
-{
-    "code": 200,
-    "type": "unknown",
-    "message": "logged in user session:1772711071957"
-}
 ]]></system-out>
   </testcase>
 </testsuite>
