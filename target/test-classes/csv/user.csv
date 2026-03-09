@@ -1,0 +1,7 @@
+id,username,firstName,lastName,email,password,phone,userStatus
+1,Ana,Edvaldo,Niel,ana@gmail.com,123456,111111111,100
+2,Begave,Keith,Esdras,begave@gmail.com,123456,222222222,100
+3,Rosa,Morgado,Cleo ,rosa@gmail.com,123456,333333333,100
+4,Cristalina,Adao,Bea,cristalina@gmail.com,123456,444444444,100
+5,Esmael,Domingos,Ana,esmael@gmail.com,123456,555555555,100
+6,Adilson,Adilio,Franco,adilson@gmail.com,1234567,666666666,100

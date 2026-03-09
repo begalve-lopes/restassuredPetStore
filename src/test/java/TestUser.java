@@ -1,10 +1,15 @@
 import static io.restassured.RestAssured.given;
+
 import static org.hamcrest.Matchers.is;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+
+import com.google.gson.Gson;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class TestUser {
@@ -106,6 +111,85 @@ public class TestUser {
             .body("code", is(200))
             .body("type", is("unknown"))
             .body("message", is(username))
+        ;
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/user.csv", numLinesToSkip = 1)
+    public void testUserDDT(
+        int id,
+        String username,
+        String firstName,
+        String lastName,
+        String email,
+        String password,
+        String phone,
+        int userStatus
+    ){
+        User user = new User();
+        user.id=id;
+        user.username=username;
+        user.firstName=firstName;
+        user.lastName=lastName;
+        user.email=email;
+        user.password=password;
+        user.phone=phone;
+        user.userStatus=userStatus;
+
+        Gson gson = new Gson();
+        String jsonBody = gson.toJson(user);
+
+        given()
+            .contentType(ct)
+            .log().all()
+            .body(jsonBody)
+        .when()
+            .post(uriUser)
+        .then()
+            .log().all()
+            .statusCode(200)
+            .body("code", is(200))
+            .body("type", is("unknown"))
+            .body("message", is(String.valueOf(id)))
+        ;     
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/user.csv", numLinesToSkip = 1)
+    public void testPutUserDDT(
+        int id,
+        String username,
+        String firstName,
+        String lastName,
+        String email,
+        String password,
+        String phone,
+        int userStatus
+    ){
+        User user = new User();
+        user.id=id;
+        user.username=username;
+        user.firstName=firstName;
+        user.lastName=lastName;
+        user.email=email;
+        user.password=password;
+        user.phone=phone;
+        user.userStatus=userStatus;
+
+        Gson gson = new Gson();
+        String jsonBody = gson.toJson(user);
+        given()
+            .contentType(ct)
+            .log().all()
+            .body(jsonBody)
+        .when()
+            .put(uriUser + "/" + username)
+        .then()
+            .log().all()
+            .statusCode(200)
+            .body("code", is(200))
+            .body("type", is("unknown"))
+            .body("message", is(String.valueOf(id)))
         ;
     }
 }
